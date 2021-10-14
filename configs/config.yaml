@@ -1,0 +1,8 @@
+server:
+  port: :8080
+
+database:
+  datasource: ./test.db
+
+secret_key:
+  access_secret: yuhuuuuu

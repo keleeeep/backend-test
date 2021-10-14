@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  auth:
+    build:
+      context: .
+      dockerfile: ./cmd/auth/Dockerfile
+    ports:
+      - "5000:8080"
+  fetch:
+    build:
+      context: .
+      dockerfile: ./cmd/fetch/Dockerfile
+    ports:
+      - "5050:8080"
